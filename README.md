@@ -1,5 +1,12 @@
 # Payment Processing Microservice
 
+![Java](https://img.shields.io/badge/Java-17-orange)
+![Spring Boot](https://img.shields.io/badge/Spring%20Boot-3.2.1-brightgreen)
+![License](https://img.shields.io/badge/License-MIT-blue.svg)
+![Docker](https://img.shields.io/badge/Docker-Ready-blue)
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-15-blue)
+![Redis](https://img.shields.io/badge/Redis-7-red)
+
 A production-ready payment processing system built with Spring Boot, demonstrating enterprise-level microservices architecture with event-driven design, idempotency handling, and distributed caching.
 
 ## Features
