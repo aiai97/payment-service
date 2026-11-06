@@ -12,12 +12,13 @@ COPY src ./src
 RUN mvn clean package -DskipTests
 
 # Stage 2: Runtime
-FROM eclipse-temurin:17-jre-alpine
+FROM eclipse-temurin:17-jre
 
 WORKDIR /app
 
 # Create non-root user for security
-RUN addgroup -S spring && adduser -S spring -G spring
+RUN addgroup --system spring && \
+    adduser --system --ingroup spring spring
 USER spring:spring
 
 # Copy JAR from build stage

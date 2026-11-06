@@ -16,8 +16,8 @@ public class ErrorResponse {
     private int status;
     private String error;
     private String message;
-    private String path;
-    private List<ValidationError> validationErrors;
+    private String path; // The request path that caused the error
+    private List<ValidationError> validationErrors; // more detailed validation errors, if applicable
 
     @Getter
     @Setter
